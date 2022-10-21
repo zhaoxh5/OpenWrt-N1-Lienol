@@ -101,7 +101,7 @@ jobs:
       if: env.UPLOAD_CONFIG == 'true'
       uses: actions/upload-artifact@main
       with:
-        name: N1.Lean.config_${{ env.Compile_Date }}
+        name: N1.Lienol.config_${{ env.Compile_Date }}
         path: config.txt
 
     - name: 下载软件包
