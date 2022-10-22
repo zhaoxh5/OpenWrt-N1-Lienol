@@ -32,6 +32,7 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_CONFIG: true
   UPLOAD_FIRMWARE: false
+  UPLOAD_PACKAGED: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
@@ -161,7 +162,7 @@ jobs:
 
     - name: 上传已打包固件在github空间
       uses: actions/upload-artifact@main
-      if: steps.organizer.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true'
+      if: steps.organizer.outputs.status == 'success' && env.UPLOAD_PACKAGED == 'true'
       with:
         name: openwrt_N1_${{ env.PACKAGED_OUTPUTDATE }}
         path:  ${{ env.PACKAGED_OUTPUTPATH }}/*.img.gz
