@@ -22,4 +22,4 @@ git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git package/
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall  #passwall出国软件
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash  #openclash出国软件
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/lean/luci-app-amlogic  #晶晨宝盒
-echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default  #添加SSR-Plus
+#echo "src-git ssrp https://github.com/fw876/helloworld.git" >> ./feeds.conf.default  #添加SSR-Plus
